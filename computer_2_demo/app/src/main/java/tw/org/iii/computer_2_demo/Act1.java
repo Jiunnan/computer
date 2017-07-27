@@ -108,6 +108,7 @@ public class Act1 extends AppCompatActivity {
                 strlist.add("+");
                 strop+="+";
                 tv2.setText(strop);
+                ifans=false;
             }
         }
     };
@@ -127,6 +128,7 @@ public class Act1 extends AppCompatActivity {
                 strlist.add("-");
                 strop+="-";
                 tv2.setText(strop);
+                ifans=false;
             }
         }
     };
@@ -146,6 +148,7 @@ public class Act1 extends AppCompatActivity {
                 strlist.add("*");
                 strop+="*";
                 tv2.setText(strop);
+                ifans=false;
             }
         }
     };
@@ -165,6 +168,7 @@ public class Act1 extends AppCompatActivity {
                 strlist.add("/");
                 strop+="/";
                 tv2.setText(strop);
+                ifans=false;
             }
         }
     };
@@ -248,20 +252,6 @@ public class Act1 extends AppCompatActivity {
             }
         }
         tv1.setText(strMsg);
-    }
-
-    private double operation(double a,double b,String str) {
-        double c = 0;
-        if ("+".equals(str)) {
-            c = a + b;
-        } else if ("-".equals(str)) {
-            c = a - b;
-        } else if ("*".equals(str)) {
-            c = a * b;
-        } else if ("/".equals(str)) {
-            c = a / b;
-        }
-        return c;
     }
 
     @Override
